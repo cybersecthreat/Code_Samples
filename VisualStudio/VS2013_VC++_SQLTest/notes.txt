@@ -1,0 +1,3 @@
+C++/CLR Windows Forms Extensions is needed.
+
+Whenever you cannot see the Windows Form, compile it with X86 then you will see the form back.

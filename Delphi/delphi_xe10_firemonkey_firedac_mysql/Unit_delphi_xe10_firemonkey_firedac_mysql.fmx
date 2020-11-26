@@ -1,0 +1,71 @@
+object Form_delphi_xe10_firemonkey_firedac_mysql: TForm_delphi_xe10_firemonkey_firedac_mysql
+  Left = 0
+  Top = 0
+  Caption = 'Form_delphi_xe10_firemonkey_firedac_mysql'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Grid1: TGrid
+    Position.X = 24.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 449.000000000000000000
+    Size.Height = 249.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    RowCount = 3
+    RowHeight = 21.000000000000000000
+    Viewport.Width = 445.000000000000000000
+    Viewport.Height = 224.000000000000000000
+  end
+  object NavigatorBindSourceDB1: TBindNavigator
+    Position.X = 200.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    DataSource = BindSourceDB1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object Localhost_mytestdbConnection: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=localhost_mytestdb'
+      'User_Name=mytestuser1'
+      'Password=AAAAABB_2')
+    Connected = True
+    LoginPrompt = False
+    Left = 575
+    Top = 46
+  end
+  object Tbl_personTable: TFDQuery
+    Active = True
+    Connection = Localhost_mytestdbConnection
+    SQL.Strings = (
+      'SELECT * FROM mytestdb.tbl_person')
+    Left = 575
+    Top = 102
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = Tbl_personTable
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 92
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <>
+    end
+  end
+end

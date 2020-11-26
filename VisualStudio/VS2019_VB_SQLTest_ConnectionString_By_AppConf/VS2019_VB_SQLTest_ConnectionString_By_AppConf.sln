@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VS2019_VB_SQLTest_ConnectionString_By_AppConf", "VS2019_VB_SQLTest_ConnectionString_By_AppConf\VS2019_VB_SQLTest_ConnectionString_By_AppConf.vbproj", "{546AC2B1-D8A4-47A2-A018-3035DCC7FE81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{546AC2B1-D8A4-47A2-A018-3035DCC7FE81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{546AC2B1-D8A4-47A2-A018-3035DCC7FE81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{546AC2B1-D8A4-47A2-A018-3035DCC7FE81}.Debug|x64.ActiveCfg = Debug|x64
+		{546AC2B1-D8A4-47A2-A018-3035DCC7FE81}.Debug|x64.Build.0 = Debug|x64
+		{546AC2B1-D8A4-47A2-A018-3035DCC7FE81}.Debug|x86.ActiveCfg = Debug|x86
+		{546AC2B1-D8A4-47A2-A018-3035DCC7FE81}.Debug|x86.Build.0 = Debug|x86
+		{546AC2B1-D8A4-47A2-A018-3035DCC7FE81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{546AC2B1-D8A4-47A2-A018-3035DCC7FE81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{546AC2B1-D8A4-47A2-A018-3035DCC7FE81}.Release|x64.ActiveCfg = Release|x64
+		{546AC2B1-D8A4-47A2-A018-3035DCC7FE81}.Release|x64.Build.0 = Release|x64
+		{546AC2B1-D8A4-47A2-A018-3035DCC7FE81}.Release|x86.ActiveCfg = Release|x86
+		{546AC2B1-D8A4-47A2-A018-3035DCC7FE81}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9732A621-CD24-4F12-A103-8505F761BD71}
+	EndGlobalSection
+EndGlobal
