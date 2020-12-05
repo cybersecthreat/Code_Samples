@@ -77,7 +77,7 @@ begin
               Ini.WriteString('SYS_UserInfo','system_domain', AES_Encrypt('K-Sec_Domain'));
 
             if not Ini.ValueExists('SYS_UserInfo', 'system_password') then
-              Ini.WriteString('SYS_UserInfo','system_password', AES_Encrypt('K-Sec_Password'));
+              Ini.WriteString('SYS_UserInfo','system_password', AES_Encrypt('K-Sec_Default_Password'));
 
             if not Ini.ValueExists('SYS_UserInfo', 'system_currentDirectory') then
               Ini.WriteString('SYS_UserInfo','system_currentDirectory', AES_Encrypt('C:\tools\SysinternalsSuite'));
@@ -88,7 +88,7 @@ begin
               end;
 
             if not Ini.ValueExists('SYS_UserInfo', 'system_program_parameters') then
-              Ini.WriteString('SYS_UserInfo','system_program_parameters', AES_Encrypt('c:\windows\system32\calc.exe'));
+              Ini.WriteString('SYS_UserInfo','system_program_parameters', AES_Encrypt('C:\windows\system32\calc.exe'));
 
             if not Ini.ValueExists('SYS_UserInfo', 'UseShellExecute_And_PsExec') then
               Ini.WriteBool('SYS_UserInfo','UseShellExecute_And_PsExec', true);
@@ -99,7 +99,7 @@ begin
             system_currentDirectory := AES_Decrypt(Ini.ReadString('SYS_UserInfo','system_currentDirectory', AES_Encrypt('C:\tools\SysinternalsSuite')));
             system_program := AES_Decrypt(Ini.ReadString('SYS_UserInfo','system_program', AES_Encrypt('C:\tools\SysinternalsSuite\PsExec.exe')));
 
-            system_program_parameters := AES_Decrypt(Ini.ReadString('SYS_UserInfo','system_program_parameters', AES_Encrypt('c:\windows\system32\calc.exe')));
+            system_program_parameters := AES_Decrypt(Ini.ReadString('SYS_UserInfo','system_program_parameters', AES_Encrypt('C:\windows\system32\calc.exe')));
             UseShellExecute_And_PsExec := Ini.ReadBool('SYS_UserInfo','UseShellExecute_And_PsExec', true);
 
             if UseShellExecute_And_PsExec=True then
